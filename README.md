@@ -1,7 +1,15 @@
 
 # Otimização de Carteira de Investimentos
 
-Este projeto consiste em uma aplicação Python que permite ao usuário calcular a fronteira eficiente de uma carteira de investimentos usando ações da Bovespa, além de exibir a alocação dos ativos e o histórico de desempenho da carteira. O objetivo é auxiliar no entendimento de alocação de ativos, risco e retorno de uma carteira, considerando restrições de investimento.
+Atividade Prática Supervisionada  
+Aluno: João Vítor dos Santos Mendonça  
+Disciplina: 962 - Otimização de Sistemas  
+Matrícula: 2021200298  
+Professor: Sergio Assunção Monteiro  
+Instituição de Ensino: Unicarioca  
+
+
+Este projeto consiste em construir um algoritmo em Python baseado no problema da mochila para montar uma carteira de investimentos. que permite ao usuário calcular a fronteira eficiente de uma carteira de investimentos usando ações da Bovespa, além de exibir a alocação dos ativos e o histórico de desempenho da carteira. O objetivo é auxiliar no entendimento de alocação de ativos, risco e retorno de uma carteira, considerando restrições de investimento.
 
 ---
 
@@ -13,7 +21,6 @@ Este projeto consiste em uma aplicação Python que permite ao usuário calcular
 - [Funcionamento do Código](#funcionamento-do-código)
 - [Estrutura do Código](#estrutura-do-código)
 - [Exemplo de Uso](#exemplo-de-uso)
-- [Referências](#referências)
 
 ---
 
@@ -37,13 +44,13 @@ pip install numpy pandas yfinance matplotlib scipy
 
 1. Clone este repositório ou navegue até o diretório onde deseja salvar o código.
 2. Certifique-se de que as bibliotecas mencionadas acima estão instaladas.
-3. Salve o arquivo do código Python (por exemplo, `portfolio_optimization.py`) no diretório escolhido.
+3. Salve o arquivo do código Python (por exemplo, `Projeto Otimizacao de Sistemas.py`) no diretório escolhido.
 
 ## Como Usar
 
 1. Execute o script no terminal:
    ```bash
-   python portfolio_optimization.py
+   python Projeto Otimizacao de Sistemas.py
    ```
 2. Ao iniciar, o código exibirá o valor total disponível para investimento (R$ 1000,00).
 3. O usuário deverá inserir o valor a ser investido em cada uma das ações listadas (máximo de 5 ações).
@@ -165,15 +172,23 @@ if __name__ == "__main__":
    - **Alocação de Ativos**: Distribuição dos investimentos nos ativos escolhidos.
    - **Histórico de Desempenho**: Evolução do retorno acumulado da carteira ao longo do tempo.
 
+   ### Exemplo de Uso
+
+Após inserir os valores de investimento, o código retorna:
+
+1. **Pesos da carteira**: Percentual investido em cada ação.
+   
+   ![Alocação de Ativos](images/alocacao_ativos.png)
+
+2. **Fronteira eficiente**: Gráfico que mostra a relação entre risco e retorno.
+
+   ![Fronteira Eficiente](images/fronteira_eficiente.png)
+
+3. **Histórico de desempenho**: Gráfico mostrando o retorno acumulado ao longo do período analisado.
+
+   ![Histórico de Desempenho](images/desempenho_acumulado.png)
+
+
 ---
 
-## Referências
 
-- [Documentação do yfinance](https://github.com/ranaroussi/yfinance)
-- [Numpy Documentation](https://numpy.org/doc/)
-- [Scipy Optimize Documentation](https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.minimize.html)
-- [Matplotlib Documentation](https://matplotlib.org/stable/contents.html)
-
----
-
-Espero que este guia ajude no entendimento e utilização do código. Se tiver dúvidas, consulte as referências ou entre em contato!
